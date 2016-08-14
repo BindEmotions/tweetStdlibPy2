@@ -17,11 +17,11 @@ status = sys.stdin.read()
 # Load configuration
 try:
     loadConfig = open('key.json', 'r')
+    config = json.load(loadConfig)
+    loadConfig.close()
 except:
     print 'WARN: key.json not found.'
     sys.exit(1);
-config = json.load(loadConfig)
-loadConfig.close()
 
 # Get UNIX Time
 unixTime = calendar.timegm(datetime.datetime.utcnow().timetuple())
