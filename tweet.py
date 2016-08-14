@@ -20,7 +20,7 @@ try:
     config = json.load(loadConfig)
     loadConfig.close()
 except:
-    print 'ERR: key.json not found.'
+    print 'ERR: Invalid key.json'
     sys.exit(1);
 
 # Get UNIX Time
