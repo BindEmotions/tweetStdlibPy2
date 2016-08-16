@@ -14,9 +14,12 @@ import random
 # Status from Stdin
 status = sys.stdin.read()
 
+# Get own directory path
+path = os.path.dirname(os.path.abspath(__file__))
+
 # Load configuration
 try:
-    loadConfig = open('key.json', 'r')
+    loadConfig = open(path + '/key.json', 'r')
     config = json.load(loadConfig)
     loadConfig.close()
 except:
