@@ -1,7 +1,5 @@
 # tweetStlibPy
-[![][mit-badge]][mit]
-
-## What is This?
+[![][mit-badge]][mit]  
 The python script which tweet without additional libraries.
 
 ## Usage
