@@ -2,17 +2,6 @@
 import urllib, urllib2, json, os, sys, hashlib, hmac, base64, datetime, calendar, random
 from HTMLParser import HTMLParser
 
-def load_json(path):
-    try:
-        f = open(path, 'r')
-        j = json.load(f)
-        f.close()
-    except IOError as e:
-        raise e
-    except ValueError as e:
-        raise e
-    return j
-
 class PostError(Exception):
     def __init__(self, code, reason, read):
         self.code = code
@@ -24,6 +13,17 @@ class parse_onetag(HTMLParser):
         HTMLParser.__init__(self)
     def handle_data(self, data):
         self.data = data
+
+def load_json(path):
+    try:
+        f = open(path, 'r')
+        j = json.load(f)
+        f.close()
+    except IOError as e:
+        raise e
+    except ValueError as e:
+        raise e
+    return j
 
 def gen_signature(consumer_secret, token_secret, method, query, url):
     # generate signature key
