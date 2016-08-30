@@ -1,5 +1,5 @@
-# tweetStlibPy
-[![][mit-badge]][mit]  
+# tweetStdlibPy2
+[![][mit-badge]][mit] [![][python2-badge]][python2]  
 The python script which tweet without additional libraries.
 
 ## Usage
@@ -26,3 +26,5 @@ The MIT License. See [LICENSE](LICENSE).
 
 [mit]:             http://opensource.org/licenses/MIT
 [mit-badge]:       https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+[python2]:         https://www.python.org/downloads/
+[python2-badge]:   https://img.shields.io/badge/Python-2-yellowgreen.svg?style=flat-square
