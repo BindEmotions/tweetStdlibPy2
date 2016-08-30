@@ -95,7 +95,8 @@ if __name__ == '__main__':
         print(e)
         sys.exit(1)
     except ValueError as e:
-        raise(e)
+        print(e)
+        sys.exit(1)
 
     try:
         post = post_tweet(status, config['consumerKey'], config['consumerSecret'], config['accessToken'], config['accessTokenSecret'])
