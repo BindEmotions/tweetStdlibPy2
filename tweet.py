@@ -116,7 +116,7 @@ if __name__ == '__main__':
         parse = parse_onetag()
         parse.feed(result['source'])
         parse.close()
-        print('Tweeted successfully with twitter application %s' % (parse.data))
+        print('Tweeted successfully with twitter application named %s' % (parse.data))
     except:
         pass
 
